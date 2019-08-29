@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java反射机制初探 | Lyu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java反射机制初探反射机制是在运行状态中： 对于任意一个类，都能够知道这个类的所有属性和方法 对于任意一个类，都能够调用它的任意一个方法和属性  反射提供的功能： 在运行时判断任意一个对象所属的类 在运行时构造任意一个类的对象 在运行时判断任意一个类的所具有的成员变量和方法 在运行时调用任意一个对象的方法 生成动态代理  获取反射对象（反射入口）的三种方法： Class.forName(“全类名">
+  <meta name="description" content="Java反射机制初探反射机制是在运行状态中 对于任意一个类，都能够知道这个类的所有属性和方法 对于任意一个类，都能够调用它的任意一个方法和属性  反射提供的功能 在运行时判断任意一个对象所属的类 在运行时构造任意一个类的对象 在运行时判断任意一个类的所具有的成员变量和方法 在运行时调用任意一个对象的方法 生成动态代理  获取反射对象（反射入口）的三种方法 Class.forName(“全类名”)">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java反射机制初探">
-<meta property="og:url" content="http://yoursite.com/2019/08/28/反射/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/28/Java反射机制/index.html">
 <meta property="og:site_name" content="Lyu&#39;s Blog">
-<meta property="og:description" content="Java反射机制初探反射机制是在运行状态中： 对于任意一个类，都能够知道这个类的所有属性和方法 对于任意一个类，都能够调用它的任意一个方法和属性  反射提供的功能： 在运行时判断任意一个对象所属的类 在运行时构造任意一个类的对象 在运行时判断任意一个类的所具有的成员变量和方法 在运行时调用任意一个对象的方法 生成动态代理  获取反射对象（反射入口）的三种方法： Class.forName(“全类名">
+<meta property="og:description" content="Java反射机制初探反射机制是在运行状态中 对于任意一个类，都能够知道这个类的所有属性和方法 对于任意一个类，都能够调用它的任意一个方法和属性  反射提供的功能 在运行时判断任意一个对象所属的类 在运行时构造任意一个类的对象 在运行时判断任意一个类的所具有的成员变量和方法 在运行时调用任意一个对象的方法 生成动态代理  获取反射对象（反射入口）的三种方法 Class.forName(“全类名”)">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-28T07:53:14.105Z">
+<meta property="og:updated_time" content="2019-08-28T13:28:19.013Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java反射机制初探">
-<meta name="twitter:description" content="Java反射机制初探反射机制是在运行状态中： 对于任意一个类，都能够知道这个类的所有属性和方法 对于任意一个类，都能够调用它的任意一个方法和属性  反射提供的功能： 在运行时判断任意一个对象所属的类 在运行时构造任意一个类的对象 在运行时判断任意一个类的所具有的成员变量和方法 在运行时调用任意一个对象的方法 生成动态代理  获取反射对象（反射入口）的三种方法： Class.forName(“全类名">
+<meta name="twitter:description" content="Java反射机制初探反射机制是在运行状态中 对于任意一个类，都能够知道这个类的所有属性和方法 对于任意一个类，都能够调用它的任意一个方法和属性  反射提供的功能 在运行时判断任意一个对象所属的类 在运行时构造任意一个类的对象 在运行时判断任意一个类的所具有的成员变量和方法 在运行时调用任意一个对象的方法 生成动态代理  获取反射对象（反射入口）的三种方法 Class.forName(“全类名”)">
   
     <link rel="alternative" href="/atom.xml" title="Lyu&#39;s Blog" type="application/atom+xml">
   
@@ -143,7 +143,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-反射" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java反射机制" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -155,7 +155,7 @@
   
 
         
-        <a href="/2019/08/28/反射/" class="archive-article-date">
+        <a href="/2019/08/28/Java反射机制/" class="archive-article-date">
   	<time datetime="2019-08-28T08:37:40.739Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-28</time>
 </a>
         
@@ -163,18 +163,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Java反射机制初探"><a href="#Java反射机制初探" class="headerlink" title="Java反射机制初探"></a>Java反射机制初探</h1><h4 id="反射机制是在运行状态中："><a href="#反射机制是在运行状态中：" class="headerlink" title="反射机制是在运行状态中："></a>反射机制是在运行状态中：</h4><ul>
+        <h1 id="Java反射机制初探"><a href="#Java反射机制初探" class="headerlink" title="Java反射机制初探"></a>Java反射机制初探</h1><h4 id="反射机制是在运行状态中"><a href="#反射机制是在运行状态中" class="headerlink" title="反射机制是在运行状态中"></a>反射机制是在运行状态中</h4><ul>
 <li>对于任意一个类，都能够知道这个类的所有属性和方法</li>
 <li>对于任意一个类，都能够调用它的任意一个方法和属性</li>
 </ul>
-<h4 id="反射提供的功能："><a href="#反射提供的功能：" class="headerlink" title="反射提供的功能："></a>反射提供的功能：</h4><ul>
+<h4 id="反射提供的功能"><a href="#反射提供的功能" class="headerlink" title="反射提供的功能"></a>反射提供的功能</h4><ul>
 <li>在运行时判断任意一个对象所属的类</li>
 <li>在运行时构造任意一个类的对象</li>
 <li>在运行时判断任意一个类的所具有的成员变量和方法</li>
 <li>在运行时调用任意一个对象的方法</li>
 <li>生成动态代理</li>
 </ul>
-<h4 id="获取反射对象（反射入口）的三种方法："><a href="#获取反射对象（反射入口）的三种方法：" class="headerlink" title="获取反射对象（反射入口）的三种方法："></a>获取反射对象（反射入口）的三种方法：</h4><ul>
+<h4 id="获取反射对象（反射入口）的三种方法"><a href="#获取反射对象（反射入口）的三种方法" class="headerlink" title="获取反射对象（反射入口）的三种方法"></a>获取反射对象（反射入口）的三种方法</h4><ul>
 <li>Class.forName(“全类名”)</li>
 <li>类名.class</li>
 <li>对象.getClass()</li>
@@ -184,6 +184,30 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class&lt;?&gt; clazz = Person.class;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Person person = <span class="keyword">new</span> Person();</span><br><span class="line">Class&lt;?&gt; clazz = person.getClass();</span><br></pre></td></tr></table></figure>
+
+<h4 id="公共方法"><a href="#公共方法" class="headerlink" title="公共方法"></a>公共方法</h4><ul>
+<li>当前类、父类、接口中的方法</li>
+<li>符合访问修饰符的方法</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Class&lt;?&gt; clazz = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">	clazz = Class.forName(<span class="string">"edu.lyuconl.reflect.Person"</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">	e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">Method[] methds = clazz.getMethods();</span><br><span class="line"><span class="keyword">for</span> (Method method: methods) &#123;</span><br><span class="line">	System.out.println(method);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="获取接口名"><a href="#获取接口名" class="headerlink" title="获取接口名"></a>获取接口名</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Class&lt;?&gt; clazz = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    clazz = Class.forName(<span class="string">"edu.lyuconl.reflect.Person"</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">Class&lt;?&gt;[] clazzs = clazz.getInterfaces();</span><br><span class="line"><span class="keyword">for</span> (Class&lt;?&gt; inter: clazzs) &#123;</span><br><span class="line">    System.out.println(inter);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="获取父类"><a href="#获取父类" class="headerlink" title="获取父类"></a>获取父类</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Class&lt;?&gt; clazz = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    clazz = Class.forName(<span class="string">"edu.lyuconl.reflect.Person"</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">Class&lt;?&gt; superClazz = clazz.getSuperclass();</span><br></pre></td></tr></table></figure>
+
+<h4 id="获取构造方法"><a href="#获取构造方法" class="headerlink" title="获取构造方法"></a>获取构造方法</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Class&lt;?&gt; clazz = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    clazz = Class.forName(<span class="string">"edu.lyuconl.reflect.Person"</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">assert</span> clazz != <span class="keyword">null</span>;</span><br><span class="line">Constructor&lt;?&gt;[] constructors = clazz.getConstructors();</span><br></pre></td></tr></table></figure>
+
+<h4 id="获取公共属性"><a href="#获取公共属性" class="headerlink" title="获取公共属性"></a>获取公共属性</h4><ul>
+<li>同公共方法</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Class&lt;?&gt; clazz = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    clazz = Class.forName(<span class="string">"edu.lyuconl.reflect.Person"</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">assert</span> clazz != <span class="keyword">null</span>;</span><br><span class="line">Field[] fields = clazz.getField();</span><br></pre></td></tr></table></figure>
+
+<h4 id="获取所有属性"><a href="#获取所有属性" class="headerlink" title="获取所有属性"></a>获取所有属性</h4><ul>
+<li>只获取当前类，区别于公共属性，忽略访问修饰符</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Class&lt;?&gt; clazz = null;</span><br><span class="line">try &#123;</span><br><span class="line">    clazz = Class.forName(&quot;edu.lyuconl.reflect.Person&quot;);</span><br><span class="line">&#125; catch (ClassNotFoundException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">assert clazz != null;</span><br><span class="line">Field[] fields = clazz.getDeclaredFields();</span><br></pre></td></tr></table></figure>
+
+<h4 id="获取当前反射所代表类（接口）的对象"><a href="#获取当前反射所代表类（接口）的对象" class="headerlink" title="获取当前反射所代表类（接口）的对象"></a>获取当前反射所代表类（接口）的对象</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Class&lt;?&gt; clazz = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    clazz = Class.forName(<span class="string">"edu.lyuconl.reflect.Person"</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">assert</span> clazz != <span class="keyword">null</span>;</span><br><span class="line">Object instance = clazz.newInstance();</span><br></pre></td></tr></table></figure>
 
 
       
@@ -280,7 +304,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/28/反射/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/28/Java反射机制/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -332,7 +356,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java反射机制初探"><span class="toc-number">1.</span> <span class="toc-text">Java反射机制初探</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#反射机制是在运行状态中："><span class="toc-number">1.0.0.1.</span> <span class="toc-text">反射机制是在运行状态中：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#反射提供的功能："><span class="toc-number">1.0.0.2.</span> <span class="toc-text">反射提供的功能：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取反射对象（反射入口）的三种方法："><span class="toc-number">1.0.0.3.</span> <span class="toc-text">获取反射对象（反射入口）的三种方法：</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java反射机制初探"><span class="toc-number">1.</span> <span class="toc-text">Java反射机制初探</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#反射机制是在运行状态中"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">反射机制是在运行状态中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#反射提供的功能"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">反射提供的功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取反射对象（反射入口）的三种方法"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">获取反射对象（反射入口）的三种方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#公共方法"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">公共方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取接口名"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">获取接口名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取父类"><span class="toc-number">1.0.0.6.</span> <span class="toc-text">获取父类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取构造方法"><span class="toc-number">1.0.0.7.</span> <span class="toc-text">获取构造方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取公共属性"><span class="toc-number">1.0.0.8.</span> <span class="toc-text">获取公共属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取所有属性"><span class="toc-number">1.0.0.9.</span> <span class="toc-text">获取所有属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取当前反射所代表类（接口）的对象"><span class="toc-number">1.0.0.10.</span> <span class="toc-text">获取当前反射所代表类（接口）的对象</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -457,11 +481,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
             
             <div class="clearfix"></div>
