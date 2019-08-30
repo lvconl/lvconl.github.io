@@ -6,21 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Lyu&#39;s Blog</title>
+  <title>Java中assert（断言）的使用 | Lyu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java中assert（断言）的使用开启断言​    首先在idea中设置VM options参数为-ea，即设置JVM中打开断言，如果不打开，assert将会无效。开启方式如下图。  assert（断言使用格式）格式一1assert [boolean 表达式]   如果boolean表达式为true，程序继运行 如果boolean表达式为false，程序终止运行，并抛出AssertionErro">
+  <meta name="description" content="Java中assert（断言）的使用开启断言​    首先在idea中设置VM options参数为-ea，即设置JVM中打开断言，如果不打开，assert将会无效。开启方式如下图。  assert（断言使用格式）格式一1assert [boolean 表达式]  如果boolean表达式为true，程序继运行 如果boolean表达式为false，程序终止运行，并抛出AssertionError">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Lyu&#39;s Blog">
+<meta property="og:title" content="Java中assert（断言）的使用">
 <meta property="og:url" content="http://yoursite.com/2019/08/30/Java中assert（断言）的使用/index.html">
 <meta property="og:site_name" content="Lyu&#39;s Blog">
-<meta property="og:description" content="Java中assert（断言）的使用开启断言​    首先在idea中设置VM options参数为-ea，即设置JVM中打开断言，如果不打开，assert将会无效。开启方式如下图。  assert（断言使用格式）格式一1assert [boolean 表达式]   如果boolean表达式为true，程序继运行 如果boolean表达式为false，程序终止运行，并抛出AssertionErro">
+<meta property="og:description" content="Java中assert（断言）的使用开启断言​    首先在idea中设置VM options参数为-ea，即设置JVM中打开断言，如果不打开，assert将会无效。开启方式如下图。  assert（断言使用格式）格式一1assert [boolean 表达式]  如果boolean表达式为true，程序继运行 如果boolean表达式为false，程序终止运行，并抛出AssertionError">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="d:%5Cblog%5Csource%5Cassets%5Cimg%5C1567140439579.png">
-<meta property="og:updated_time" content="2019-08-30T04:58:26.916Z">
+<meta property="og:image" content="d:/blog/source/assets/img/1567140439579.png">
+<meta property="og:updated_time" content="2019-08-30T06:49:34.239Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lyu&#39;s Blog">
-<meta name="twitter:description" content="Java中assert（断言）的使用开启断言​    首先在idea中设置VM options参数为-ea，即设置JVM中打开断言，如果不打开，assert将会无效。开启方式如下图。  assert（断言使用格式）格式一1assert [boolean 表达式]   如果boolean表达式为true，程序继运行 如果boolean表达式为false，程序终止运行，并抛出AssertionErro">
-<meta name="twitter:image" content="d:%5Cblog%5Csource%5Cassets%5Cimg%5C1567140439579.png">
+<meta name="twitter:title" content="Java中assert（断言）的使用">
+<meta name="twitter:description" content="Java中assert（断言）的使用开启断言​    首先在idea中设置VM options参数为-ea，即设置JVM中打开断言，如果不打开，assert将会无效。开启方式如下图。  assert（断言使用格式）格式一1assert [boolean 表达式]  如果boolean表达式为true，程序继运行 如果boolean表达式为false，程序终止运行，并抛出AssertionError">
+<meta name="twitter:image" content="d:/blog/source/assets/img/1567140439579.png">
   
     <link rel="alternative" href="/atom.xml" title="Lyu&#39;s Blog" type="application/atom+xml">
   
@@ -52,7 +53,7 @@
 			<img src="/assets/avatar.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">化身孤岛的惊！</a></h1>
+		  <h1 class="header-author"><a href="/">化身孤岛的惊</a></h1>
 		</hgroup>
 		
 
@@ -60,8 +61,6 @@
 			<ul>
 			
 				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/tags/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -102,12 +101,10 @@
 				<img src="/assets/avatar.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">化身孤岛的惊！</h1>
+			  <h1 class="header-author js-header-author">化身孤岛的惊</h1>
 			</hgroup>
 			
 			
-			
-				
 			
 				
 			
@@ -127,9 +124,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/tags/">随笔</a></li>
+					<li style="width: 100%"><a href="/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -147,33 +142,42 @@
             <article id="post-Java中assert（断言）的使用" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Java中assert（断言）的使用
+    </h1>
+  
+
+        
+        <a href="/2019/08/30/Java中assert（断言）的使用/" class="archive-article-date">
+  	<time datetime="2019-08-30T04:49:17.122Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-30</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Java中assert（断言）的使用"><a href="#Java中assert（断言）的使用" class="headerlink" title="Java中assert（断言）的使用"></a>Java中assert（断言）的使用</h1><h4 id="开启断言"><a href="#开启断言" class="headerlink" title="开启断言"></a>开启断言</h4><p>​    首先在idea中设置VM options参数为-ea，即设置JVM中打开断言，如果不打开，assert将会无效。开启方式如下图。</p>
-<p><img src="D:%5Cblog%5Csource%5Cassets%5Cimg%5C1567140439579.png" alt="1567140439579"></p>
+<p><img src="D:\blog\source\assets\img\1567140439579.png" alt="1567140439579"></p>
 <h4 id="assert（断言使用格式）"><a href="#assert（断言使用格式）" class="headerlink" title="assert（断言使用格式）"></a>assert（断言使用格式）</h4><h5 id="格式一"><a href="#格式一" class="headerlink" title="格式一"></a>格式一</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">assert</span> [<span class="keyword">boolean</span> 表达式]</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>如果boolean表达式为true，程序继运行</li>
 <li>如果boolean表达式为false，程序终止运行，并抛出AssertionError异常</li>
 </ul>
 <p>示例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> y = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">assert</span> x &gt; y;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>控制台输出：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Exception in thread <span class="string">"main"</span> java.lang.AssertionError</span><br><span class="line">	at edu.lyuconl.Demo.main(Demo.java:<span class="number">11</span>)</span><br></pre></td></tr></table></figure>
-
 <h5 id="格式二"><a href="#格式二" class="headerlink" title="格式二"></a>格式二</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">assert</span> [<span class="keyword">boolean</span> 表达式] : <span class="string">"自定义错误信息"</span>;</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>同格式一，但当boolean表达式为false时，控制台输出自定义错误信息</li>
 </ul>
 <p>示例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> y = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">assert</span> x &gt; y : <span class="string">"大小比较错误"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>控制台输出：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Exception in thread <span class="string">"main"</span> java.lang.AssertionError: 大小比较错误</span><br><span class="line">	at edu.lyuconl.Demo.main(Demo.java:<span class="number">11</span>)</span><br></pre></td></tr></table></figure>
-
 
       
 
@@ -208,6 +212,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -330,7 +345,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 化身孤岛的惊！
+    		&copy; 2019 化身孤岛的惊
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
