@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>标准方程 | Lyu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="标准方程前言— 一种更有效的线性回归形式 如上图所示，当数据有了较多的特征时就不能使用$h_\theta(x) = \theta_0 + \theta_1x$来表示假设函数了，要使用下式来做表达式：  h_\theta(x) = \theta_0 + \theta_1x_1 +\theta_2x_2 + \cdots + \theta_nx_n化简式（1）： ​    为方便，不放令$x_0 =">
+  <meta name="description" content="标准方程前言– 一种更有效的线性回归形式 如上图所示，当数据有了较多的特征时就不能使用$h_\theta(x) = \theta_0 + \theta_1x$来表示假设函数了，要使用下式来做表达式：$$h_\theta(x) = \theta_0 + \theta_1x_1 +\theta_2x_2 + \cdots + \theta_nx_n$$化简式（1）： ​    为方便，不放令$x_0">
 <meta name="keywords" content="机器学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="标准方程">
 <meta property="og:url" content="http://yoursite.com/2019/08/28/标准方程/index.html">
 <meta property="og:site_name" content="Lyu&#39;s Blog">
-<meta property="og:description" content="标准方程前言— 一种更有效的线性回归形式 如上图所示，当数据有了较多的特征时就不能使用$h_\theta(x) = \theta_0 + \theta_1x$来表示假设函数了，要使用下式来做表达式：  h_\theta(x) = \theta_0 + \theta_1x_1 +\theta_2x_2 + \cdots + \theta_nx_n化简式（1）： ​    为方便，不放令$x_0 =">
+<meta property="og:description" content="标准方程前言– 一种更有效的线性回归形式 如上图所示，当数据有了较多的特征时就不能使用$h_\theta(x) = \theta_0 + \theta_1x$来表示假设函数了，要使用下式来做表达式：$$h_\theta(x) = \theta_0 + \theta_1x_1 +\theta_2x_2 + \cdots + \theta_nx_n$$化简式（1）： ​    为方便，不放令$x_0">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://img.lvconl.top/%E5%A4%9A%E5%8F%98%E9%87%8F.webp">
 <meta property="og:updated_time" content="2019-08-28T11:56:56.833Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="标准方程">
-<meta name="twitter:description" content="标准方程前言— 一种更有效的线性回归形式 如上图所示，当数据有了较多的特征时就不能使用$h_\theta(x) = \theta_0 + \theta_1x$来表示假设函数了，要使用下式来做表达式：  h_\theta(x) = \theta_0 + \theta_1x_1 +\theta_2x_2 + \cdots + \theta_nx_n化简式（1）： ​    为方便，不放令$x_0 =">
+<meta name="twitter:description" content="标准方程前言– 一种更有效的线性回归形式 如上图所示，当数据有了较多的特征时就不能使用$h_\theta(x) = \theta_0 + \theta_1x$来表示假设函数了，要使用下式来做表达式：$$h_\theta(x) = \theta_0 + \theta_1x_1 +\theta_2x_2 + \cdots + \theta_nx_n$$化简式（1）： ​    为方便，不放令$x_0">
 <meta name="twitter:image" content="http://img.lvconl.top/%E5%A4%9A%E5%8F%98%E9%87%8F.webp">
   
     <link rel="alternative" href="/atom.xml" title="Lyu&#39;s Blog" type="application/atom+xml">
@@ -159,31 +159,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="标准方程"><a href="#标准方程" class="headerlink" title="标准方程"></a>标准方程</h1><h3 id="前言—-一种更有效的线性回归形式"><a href="#前言—-一种更有效的线性回归形式" class="headerlink" title="前言— 一种更有效的线性回归形式"></a>前言— 一种更有效的线性回归形式</h3><p><img src="http://img.lvconl.top/%E5%A4%9A%E5%8F%98%E9%87%8F.webp" alt></p>
-<p>如上图所示，当数据有了较多的特征时就不能使用$h_\theta(x) = \theta_0 + \theta_1x$来表示假设函数了，要使用下式来做表达式：</p>
-<script type="math/tex; mode=display">
-h_\theta(x) = \theta_0 + \theta_1x_1 +\theta_2x_2 + \cdots + \theta_nx_n</script><p>化简式（1）：</p>
+        <h1 id="标准方程"><a href="#标准方程" class="headerlink" title="标准方程"></a>标准方程</h1><h3 id="前言–-一种更有效的线性回归形式"><a href="#前言–-一种更有效的线性回归形式" class="headerlink" title="前言– 一种更有效的线性回归形式"></a>前言– 一种更有效的线性回归形式</h3><p><img src="http://img.lvconl.top/%E5%A4%9A%E5%8F%98%E9%87%8F.webp" alt></p>
+<p>如上图所示，当数据有了较多的特征时就不能使用$h_\theta(x) = \theta_0 + \theta_1x$来表示假设函数了，要使用下式来做表达式：<br>$$<br>h_\theta(x) = \theta_0 + \theta_1x_1 +\theta_2x_2 + \cdots + \theta_nx_n<br>$$<br>化简式（1）：</p>
 <p>​    为方便，不放令$x_0 = 1$.</p>
-<p>​    令$X= \begin{bmatrix} x_0 \\ x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix} \in \mathbb{R^{n+1}},\theta=\begin{bmatrix} \theta_0 \\ \theta_1 \\ \theta_2 \\ \vdots \\ \theta_n \end{bmatrix} \in \mathbb{R^{n+1}}.$</p>
-<p>且有$h_\theta(x) =\theta_0 + \theta_1x_1 + \theta_2x_2+\cdots+\theta_nx_n \ = \begin{bmatrix} \theta_0 \quad \theta_1 \quad\theta_2 \quad \cdots \quad \theta_n \end{bmatrix} \begin{bmatrix} x_0 \\ x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix} \ =\theta^TX$</p>
-<p>即：</p>
-<script type="math/tex; mode=display">
-h_\theta(x) = \theta^TX</script><h3 id="正规方程"><a href="#正规方程" class="headerlink" title="正规方程"></a>正规方程</h3><p>我们对单个变量的线性回归使用的是梯度下降法，为了最小化代价函数$J$，算法需要迭代很多步才能得到全剧最优值，而使用正规方程可以一步到位。等待最小化的代价函数，就是要找出导数为0的点，也就是驻点。</p>
+<p>​    令$X= \begin{bmatrix} x_0 \ x_1 \ x_2 \ \vdots \ x_n \end{bmatrix} \in \mathbb{R^{n+1}},\theta=\begin{bmatrix} \theta_0 \ \theta_1 \ \theta_2 \ \vdots \ \theta_n \end{bmatrix} \in \mathbb{R^{n+1}}.$</p>
+<p>且有$h_\theta(x) =\theta_0 + \theta_1x_1 + \theta_2x_2+\cdots+\theta_nx_n \ = \begin{bmatrix} \theta_0 \quad \theta_1 \quad\theta_2 \quad \cdots \quad \theta_n \end{bmatrix} \begin{bmatrix} x_0 \ x_1 \ x_2 \ \vdots \ x_n \end{bmatrix} \ =\theta^TX$</p>
+<p>即：<br>$$<br>h_\theta(x) = \theta^TX<br>$$</p>
+<h3 id="正规方程"><a href="#正规方程" class="headerlink" title="正规方程"></a>正规方程</h3><p>我们对单个变量的线性回归使用的是梯度下降法，为了最小化代价函数$J$，算法需要迭代很多步才能得到全剧最优值，而使用正规方程可以一步到位。等待最小化的代价函数，就是要找出导数为0的点，也就是驻点。</p>
 <p> 假设有函数$J(\theta) = a\theta^2 + b\theta +c$，为找出能使代价函数最小化的$\theta$，需求出$J$关于$\theta$的导数，当导数为0时，$ \theta$为最优解。</p>
-<p> 我们知道当$\theta$为实数时，代价函数为:</p>
-<script type="math/tex; mode=display">
-J(\theta_0,\theta_1,\cdots,\theta_m) = \frac{1}{2m}\sum\limits_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)})^2</script><p>由微积分知识可知，求出$J$关于每个$\theta$的偏导数，联立求解，即可得到损失函数的最优解，即：</p>
-<script type="math/tex; mode=display">
-\frac{\partial}{\partial\theta_j}J(\theta_0,\theta_1,\cdots,\theta_m) = 0 \quad (for\ every\ j)</script><p>但是这种方式在很多时候计算是相当复杂的。因此，绝大多数时候考虑另一种方法。</p>
-<p>当$\theta$为$n + 1$维向量时，不妨假设$X = \begin{bmatrix} x_0^{(1)} \quad \cdots \quad x_n^{(1)} \\ \vdots \quad \ddots \quad \vdots \\x_0^{(m)} \quad \dots \quad x_n^{(m)}  \end{bmatrix}$,$Y = \begin{bmatrix} y^{(1)} \\ y^{(2)} \\ \vdots \\ y^{(m)} \end{bmatrix}$,$\theta=\begin{bmatrix} \theta_0 \\ \theta_1 \\ \theta_2 \\ \vdots \\ \theta_n \end{bmatrix}$，则代价函数为：</p>
-<script type="math/tex; mode=display">
-J(\theta_0, \theta_1,\cdots, \theta_m) = \frac{1}{2m}(X\theta - Y)^T(X\theta - Y)</script><p> 则可得：</p>
-<script type="math/tex; mode=display">
-\frac{\partial}{\partial\theta}J(\theta) = \frac{1}{2m}(\frac{\partial Y^TY}{\partial\theta} + \frac{\partial\theta^TX^TX\theta}{\partial\theta} - \frac{\partial Y^TX\theta}{\partial\theta} - \frac{\partial\theta^TX^TY}{\partial\theta})</script><p> 化简后可得：</p>
-<script type="math/tex; mode=display">
-\frac{\partial}{\partial\theta}J(\theta) = \frac{1}{m}(X^TX\theta - X^TY)</script><p> 令式（7）为0，易得：</p>
-<script type="math/tex; mode=display">
-\theta = (X^TX)^{-1}X^TY</script>
+<p> 我们知道当$\theta$为实数时，代价函数为:<br>$$<br>J(\theta_0,\theta_1,\cdots,\theta_m) = \frac{1}{2m}\sum\limits_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)})^2<br>$$<br>由微积分知识可知，求出$J$关于每个$\theta$的偏导数，联立求解，即可得到损失函数的最优解，即：<br>$$<br>\frac{\partial}{\partial\theta_j}J(\theta_0,\theta_1,\cdots,\theta_m) = 0 \quad (for\ every\ j)<br>$$<br>但是这种方式在很多时候计算是相当复杂的。因此，绝大多数时候考虑另一种方法。</p>
+<p>当$\theta$为$n + 1$维向量时，不妨假设$X = \begin{bmatrix} x_0^{(1)} \quad \cdots \quad x_n^{(1)} \ \vdots \quad \ddots \quad \vdots \x_0^{(m)} \quad \dots \quad x_n^{(m)}  \end{bmatrix}$,$Y = \begin{bmatrix} y^{(1)} \ y^{(2)} \ \vdots \ y^{(m)} \end{bmatrix}$,$\theta=\begin{bmatrix} \theta_0 \ \theta_1 \ \theta_2 \ \vdots \ \theta_n \end{bmatrix}$，则代价函数为：<br>$$<br>J(\theta_0, \theta_1,\cdots, \theta_m) = \frac{1}{2m}(X\theta - Y)^T(X\theta - Y)<br>$$<br> 则可得：<br>$$<br>\frac{\partial}{\partial\theta}J(\theta) = \frac{1}{2m}(\frac{\partial Y^TY}{\partial\theta} + \frac{\partial\theta^TX^TX\theta}{\partial\theta} - \frac{\partial Y^TX\theta}{\partial\theta} - \frac{\partial\theta^TX^TY}{\partial\theta})<br>$$<br> 化简后可得：<br>$$<br>\frac{\partial}{\partial\theta}J(\theta) = \frac{1}{m}(X^TX\theta - X^TY)<br>$$<br> 令式（7）为0，易得：<br>$$<br>\theta = (X^TX)^{-1}X^TY<br>$$</p>
+
       
 
       
@@ -330,7 +316,7 @@ J(\theta_0, \theta_1,\cdots, \theta_m) = \frac{1}{2m}(X\theta - Y)^T(X\theta - Y
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#标准方程"><span class="toc-number">1.</span> <span class="toc-text">标准方程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言—-一种更有效的线性回归形式"><span class="toc-number">1.0.1.</span> <span class="toc-text">前言— 一种更有效的线性回归形式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正规方程"><span class="toc-number">1.0.2.</span> <span class="toc-text">正规方程</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#标准方程"><span class="toc-number">1.</span> <span class="toc-text">标准方程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言–-一种更有效的线性回归形式"><span class="toc-number">1.0.1.</span> <span class="toc-text">前言– 一种更有效的线性回归形式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正规方程"><span class="toc-number">1.0.2.</span> <span class="toc-text">正规方程</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
