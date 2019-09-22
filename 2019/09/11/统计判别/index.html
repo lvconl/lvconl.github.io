@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Lyu&#39;s Blog</title>
+  <title>统计判别 | Lyu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="统计判别贝叶斯判别前导知识：  错误率：$p(error|x)=\begin{cases} p(\omega_1|x),x \in \omega_2 \ p(\omega_2|x),x \in \omega_1  \end{cases}$  贝叶斯公式：$p(\omega_i|x) = \frac{p(x|\omega_i)P(\omega_i)}{p(x)}=\frac{p(x|\omega_i">
+<meta name="keywords" content="模式识别">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/08/28/hello-world/index.html">
+<meta property="og:title" content="统计判别">
+<meta property="og:url" content="http://yoursite.com/2019/09/11/统计判别/index.html">
 <meta property="og:site_name" content="Lyu&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="统计判别贝叶斯判别前导知识：  错误率：$p(error|x)=\begin{cases} p(\omega_1|x),x \in \omega_2 \ p(\omega_2|x),x \in \omega_1  \end{cases}$  贝叶斯公式：$p(\omega_i|x) = \frac{p(x|\omega_i)P(\omega_i)}{p(x)}=\frac{p(x|\omega_i">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-28T08:33:34.308Z">
+<meta property="og:updated_time" content="2019-09-12T12:02:19.504Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="统计判别">
+<meta name="twitter:description" content="统计判别贝叶斯判别前导知识：  错误率：$p(error|x)=\begin{cases} p(\omega_1|x),x \in \omega_2 \ p(\omega_2|x),x \in \omega_1  \end{cases}$  贝叶斯公式：$p(\omega_i|x) = \frac{p(x|\omega_i)P(\omega_i)}{p(x)}=\frac{p(x|\omega_i">
   
     <link rel="alternative" href="/atom.xml" title="Lyu&#39;s Blog" type="application/atom+xml">
   
@@ -136,39 +137,54 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-统计判别" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      统计判别
     </h1>
   
 
         
-        <a href="/2019/08/28/hello-world/" class="archive-article-date">
-  	<time datetime="2019-08-28T08:33:34.308Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-28</time>
+        <a href="/2019/09/11/统计判别/" class="archive-article-date">
+  	<time datetime="2019-09-11T01:52:21.157Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="统计判别"><a href="#统计判别" class="headerlink" title="统计判别"></a>统计判别</h1><h2 id="贝叶斯判别"><a href="#贝叶斯判别" class="headerlink" title="贝叶斯判别"></a>贝叶斯判别</h2><p>前导知识：</p>
+<ul>
+<li><p>错误率：$p(error|x)=\begin{cases} p(\omega_1|x),x \in \omega_2 \ p(\omega_2|x),x \in \omega_1  \end{cases}$</p>
+</li>
+<li><p>贝叶斯公式：$p(\omega_i|x) = \frac{p(x|\omega_i)P(\omega_i)}{p(x)}=\frac{p(x|\omega_i)P(\omega_i)}{\sum\limits_{i=1}^{n}p(x|\omega_i)P(\omega_i)}$</p>
+</li>
+<li><p>判别规则：若$p(\omega_1|x) &gt; p(\omega_2|x),则x\in\omega_1$，反之，$x\in \omega_2$</p>
+</li>
+</ul>
+<p>结合贝叶斯公式以及判别规则，有：<br>$$<br>p(x|\omega_1)P(\omega_1) &gt; p(x|\omega_2)P(\omega_2),x \in\omega_1 \ p(x|\omega_1)P(\omega_1) &lt; p(x|\omega_2)P(\omega_2),x \in \omega_2<br>$$<br>更进一步化简，有：<br>$$<br>l_{12} = \frac{p(x|\omega_1)}{p(x|\omega_2)} &gt; \frac{P(\omega_2)}{P(\omega1)}，x \in \omega_1\<br>l_{12} = \frac{p(x|\omega_1)}{p(x|\omega_2)} &lt; \frac{P(\omega_2)}{P(\omega1)}，x \in \omega_2<br>$$<br>其中，$l_{12}$称为似然比，$\frac{P(\omega_2)}{P(\omega_1)}$称为决策阈值，此判别称为贝叶斯判别。</p>
+<h2 id="贝叶斯最小风险判别"><a href="#贝叶斯最小风险判别" class="headerlink" title="贝叶斯最小风险判别"></a>贝叶斯最小风险判别</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>​        在决策中，除了关心决策的正确与否，有时我们更关心错误的决策将带来的损失。比如在判断细胞是否为癌细胞的决策中，若把正常细胞判定为癌细胞，将会增加患者的负担和不必要的治疗，但若把癌细胞判定为正常细胞，将会导致患者失去宝贵的发现和治疗癌症的机会，甚至会影响患者的生命。这两种类型的决策错误所产生的代价是不同的。</p>
+<p>​        考虑不同错误带来不同的风险时的一种最优决策，即贝叶斯最小风险决策，对于$\omega_i$的向量$x$采取决策为$w_j$时所带来的损失为:<br>$$<br>L_{ij},i=1,2,\cdots,k,j=1,2,\cdots,n<br>$$<br>​        通常$L_{ij}$被称为损失函数，以表格形式给出，也称为决策表。</p>
+<p>​        对于一个样本$x$，使用贝叶斯最小风险决策如下步骤:</p>
+<ul>
+<li>利用贝叶斯公式计算后验概率：$p(\omega_i|x) = \frac{p(x|\omega_i)P(\omega_i)}{\sum \limits_{j=1}^{n}p(\omega_j)P(\omega_j)}$</li>
+<li>利用决策表计算决策风险：$r_j = \sum\limits_{i=1}^{m}L_{ij}p(\omega_i|x)$</li>
+<li>选择最小风险决策：$\alpha = argsmin_{j=1,\cdots,k}r_j$</li>
+</ul>
+<h3 id="二类实例"><a href="#二类实例" class="headerlink" title="二类实例"></a>二类实例</h3><p>​        以判别细胞是否为癌细胞为例。状态1为正常细胞，状态2为癌细胞，假设：<br>$$<br>P(\omega_1) = 0.9,P(\omega_2) = 0.1 \<br>p(x|\omega_1) = 0.2,p(x|\omega_2) = 0.4 \<br>L_{ij} = \left{ \begin{matrix} 0 &amp; 6 \ 1 &amp; 0  \end{matrix} \right}<br>$$<br>​        计算知后验概率为：<br>$$<br>p(\omega_1|x) = 0.818 \ p(\omega_2|x) = 0.182<br>$$<br>​        计算决策风险：<br>$$<br>r_1 = \sum \limits_{i=1}^2L_{1i}p(\omega_i|x) = 1.092 \<br>r_2 = \sum \limits_{i=1}^2L_{2i}p(\omega_i|x) = 0.818<br>$$<br>​        通过决策风险可知，对于$x$属于$\omega_2$风险较小。</p>
+<h3 id="M类最小风险判别"><a href="#M类最小风险判别" class="headerlink" title="M类最小风险判别"></a>M类最小风险判别</h3><p>​        对于M类情况的最小风险判别，若：<br>$$<br>r_i(x) &lt; r_j(x), j=1,2,\cdots,M,j\neq i,<br>$$<br>​        则$x \in \omega_i$。</p>
+<p>​        对于$L$不妨有如下取值：<br>$$<br>L = \begin{cases} 0, when \ \ i = j \ 1, when \ \ i \neq j \end{cases}<br>$$<br>​        则条件平均风险可化为：<br>$$<br>r_j(x) = \sum \limits_{i=1}^{m}L_{ij}p(\omega_i|x) \ = \sum \limits_{i=1}^{m}L_{ij}p(x|\omega_i)P(\omega_i) \ =p(x) - p(x|\omega_j)P(\omega_j)<br>$$</p>
+<p>​        综上，由$r_i(x) &lt; r_j(x)$，即当$p(x|\omega_i)P(\omega_i) &gt; p(x|\omega_j)P(\omega_j)$，$x \in \omega_i$，对应判别函数为：<br>$$<br>d_i(x) = p(x|\omega_i)P(\omega_i),\ \ i = 1,2,\cdots,M<br>$$<br>​        对于全部的$i \neq j$，有$d_i(x) &gt; d_j(x), x \in \omega_i$。</p>
+<h2 id="正态分布模式的贝叶斯分类器"><a href="#正态分布模式的贝叶斯分类器" class="headerlink" title="正态分布模式的贝叶斯分类器"></a>正态分布模式的贝叶斯分类器</h2><h3 id="M种模式类别的多变量正态类密度函数"><a href="#M种模式类别的多变量正态类密度函数" class="headerlink" title="M种模式类别的多变量正态类密度函数"></a>M种模式类别的多变量正态类密度函数</h3><p>具有M种模式类别的多变量正态类密度函数为：<br>$$<br>p(x|\omega_i) = \frac{1}{(2\pi)^{\frac{n}{2}}|C_i|^{\frac{1}{2}}}exp {-\frac{1}{2}(x - m_i)^TC^{-1}(x-m_i), \ \ i = 1,2,\cdots,M<br>$$<br>其中:</p>
+<ul>
+<li>$m_i = E_i{ x }$</li>
+<li>$C_i = E_i{ (x - m_i)(x-m_i)^T }$</li>
+</ul>
+<p>又已知类别$\omega_i$的判别函数为：<br>$$<br>d_i(x) = p(x|\omega_i)P(\omega_i), \ \ i = 1,2,\cdots,M<br>$$<br>对于正态密度函数，可取自然对数的形式以方便计算（此处更多的时关注背后的数学意义，而并不是表面的等式）。则可得：<br>$$<br>d_i(x) = lnP(\omega_i) + lnp(x|\omega_i),\ \ i = 1,2,\cdots,M<br>$$<br>带入多变量的正态类密度函数可得：<br>$$<br>d_i(x) = lnP(\omega_i) - \frac{n}{2}ln2\pi - \frac{1}{2}ln|C_i| - \frac{1}{2}(x-m_i)^TC^{-1}(x-m_i)<br>$$<br>去掉与$i$无关的项，可得：<br>$$<br>d_i(x) = lnP(\omega_i) - \frac{1}{2}ln|C_i| - \frac{1}{2}(x-m_i)^TC^{-1}(x-m_i)<br>$$<br>即正态分布模式的贝叶斯判别函数。</p>
 
       
 
@@ -203,6 +219,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">模式识别</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -253,7 +280,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/28/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/11/统计判别/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -267,15 +294,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/28/初识机器学习/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          初始机器学习
-        
-      </div>
-    </a>
   
+    <a href="/2019/09/07/leetcode-9.回文数/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -300,7 +323,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#统计判别"><span class="toc-number">1.</span> <span class="toc-text">统计判别</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#贝叶斯判别"><span class="toc-number">1.1.</span> <span class="toc-text">贝叶斯判别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#贝叶斯最小风险判别"><span class="toc-number">1.2.</span> <span class="toc-text">贝叶斯最小风险判别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.2.1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二类实例"><span class="toc-number">1.2.2.</span> <span class="toc-text">二类实例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#M类最小风险判别"><span class="toc-number">1.2.3.</span> <span class="toc-text">M类最小风险判别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正态分布模式的贝叶斯分类器"><span class="toc-number">1.3.</span> <span class="toc-text">正态分布模式的贝叶斯分类器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#M种模式类别的多变量正态类密度函数"><span class="toc-number">1.3.1.</span> <span class="toc-text">M种模式类别的多变量正态类密度函数</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
